@@ -1,0 +1,565 @@
+body{
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px auto 150px;
+}
+
+body{
+  width: 100%;
+  height: fit-content;
+  background-color: #F5F5DC;
+}
+
+main{
+  margin: 60px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#main-ini{
+  background-color: #a97d64;
+}
+
+#main-sup{
+  background-color: #91BD59;
+}
+
+#main-net{
+  background-color: #723232;
+}
+
+#main-end{
+  background-color: #b35bb1;
+}
+
+#main-about{
+  background-color: #6B6B6B;
+}
+/*cabeçalho*/
+
+header{
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 40px;
+}
+.inicial{
+  background-image: url(Img/ini-fundo.png);
+}
+.superficie{
+  background-image: url(Img/sup-fundo.jpg);
+}
+.nether{
+  background-image: url(Img/net-fundo.jpg);
+}
+.end{
+  background-image: url(Img/end-fundo.webp);
+}
+.about{
+  background-image: url(Img/about-fundo.jpg);
+}
+
+ a{
+  color: inherit;
+  text-decoration: none;
+}
+article a{
+  text-decoration: underline;
+}
+.titulo{
+  width: 300px;
+}
+.cefet{
+  width: 200px;
+}
+.logo{
+  width: 100px;
+}
+
+.atual{
+  margin: 20px;
+  font-size: 40px;
+  color: gold;
+}
+
+.portais{
+  margin: 20px;
+  font-size: 40px;
+  color: whitesmoke;
+}
+.portais :hover{
+  font-size: 45px;
+}
+
+.indice{
+  width: 90%;
+  height: 450px;
+  margin: 20px;
+}
+
+.ind-art{
+  width: 100%;
+}
+.ind-art ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  margin-left: 80px;
+}
+
+.ind-art li{
+  font-size: 30px;
+}
+
+/*corpo-página-inicial*/
+
+#aviso p{
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+
+#bloco{
+  position:absolute;
+  top:0;
+  left:0;
+  width:70px;
+}
+
+section:not(#luta){
+  justify-content: space-around;
+}
+
+main section{
+  display: flex;
+}
+
+article:not(.indice article){
+  width: 65%;
+}
+
+ h1, dt{
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+#main-ini h1:not(.nome-dimen){
+  color: black;
+}
+
+
+main p, li, dd{
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 20px;
+  font-size: 25px;
+  text-align: justify;
+  color: whitesmoke;
+}
+#main-ini article p, #main-ini li{
+  color: black;
+}
+main a{
+  text-decoration: underline;
+}
+section{
+  margin:20px;
+}
+
+img {
+  object-fit: contain;
+}
+
+.img-dimen{
+  object-fit: fill;
+}
+
+#foto1-ini{
+  width: 450px;
+  height: fit-content;
+  position: relative;
+  top: 50px;
+}
+
+#avatar{
+  width: 300px;
+}
+
+#top-dimen{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dimen{
+  float: none;
+  position: relative;
+  width: 25%;
+  height: 200;
+  border: black solid 5px;
+  transition: all 200ms ease;
+}
+#dimen-sup{
+  right: 10px;
+}
+
+#dimen-end{
+  left: 10px;
+}
+.img-dimen{
+  width: 100%;
+  height: 100%;
+}
+.dimen:hover {
+  width: 70%;
+}
+
+.nome-dimen{
+  font-size: 80px;
+  background-color: rgb(0, 0, 0, 0.5);
+  position:absolute;
+  color: whitesmoke;
+  top: 0px;
+  opacity: 0;
+  transition: all 200ms ease;
+  width:100%;
+}
+
+.dimen:hover  .nome-dimen{
+  opacity: 1;
+}
+
+/*corpo-superfície*/
+
+#foto1-sup{
+  width: 35%;
+}
+
+#bancada{
+margin: 30px;
+padding: 20px;
+justify-content: space-around;
+background-color: #644838;
+border-radius:10px ;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#crafting{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.crafter{
+  height: 40%;
+}
+
+#mob-amigo, #mob-hostil{
+  flex-direction: column;
+}
+
+#mob-amigo{
+  padding: 20px;
+}
+
+#mob-hostil{
+  background-color: #817c74;
+  margin: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.mob{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 200ms ease;
+  width: 100%;
+  position: relative;
+  bottom: 30px;
+}
+
+#amigo-intro, #hostil-intro{
+  width: 100%;
+}
+
+#amigos, #hostis{
+  display: grid;
+  grid-template: 200px 200px / 30% 30% 30%;
+  justify-content: space-between;
+  max-width: 100%;
+  row-gap: 150px;
+  height: 550px;
+  margin-top: 50px;
+  
+}
+
+.mob img{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  right: 10px;
+  transition:right 0.2s ease;
+}
+
+.mob-nome{
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 10px;
+  font-size: 50px;
+}
+
+.mob-perfil{
+  opacity: 0;
+  position: absolute;
+  left: 200px;
+  transition: opacity 0.1s ease;
+  transition-delay: 0s;
+}
+
+
+.mob-info{
+  font-size: 17px;
+  margin-top: 2px; 
+  width:80%;
+  height:80%
+}
+
+.mob:hover{
+  width: 100%;
+  height: 110%;
+}
+
+.mob:hover  .mob-perfil {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+
+.mob:hover  img{
+  right: 140px;
+}
+
+#ferra-arma{
+  display: flex;
+  height: 600px;
+  margin: 0px;
+} 
+
+#ferra{
+  width: 100%;
+  height: 400px;
+}
+
+#arma{
+  width: 100%;
+  height: 200px;
+  
+}
+#fa-texto{
+  width: 60%;
+  height: 400px;
+}
+
+#fa-img{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+
+#encantamento{
+  height: 300px;
+}
+
+#mesa-encantamento{
+  width: 35%;
+  height: 100%;
+}
+
+.voltar{
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
+  text-align: center;
+  margin: 10px;
+  font-size: 70px;
+  text-decoration: underline;
+}
+#ini-voltar{
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+/*corpo-nether*/
+
+#biomas{
+  flex-direction: column;
+  background-color:  #ff6600;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#bastion-img{
+  max-height: 400px;
+}
+
+#netherite{
+  position: relative;
+}
+
+#netherite-img{
+  margin-left: 40px;
+  max-height: 600px;
+}
+/*corpo-end*/
+
+
+#end-portal-1{
+  width: 30%;
+}
+
+#entrada-end{
+  width: 30%;
+}
+
+#luta{
+  position: relative;
+}
+
+#dragão{
+  width: 30%;
+  position: absolute;
+  left: 900px;
+  bottom: -60px;
+  transition: all 5s ease;
+}
+
+#dragão:active{
+  animation: ataque 5s ease;
+}
+
+@keyframes ataque{
+  0%   { transform: rotate(0deg) translateX(100px); }
+  100% { transform: rotate(360deg) translateX(100px) ; }
+}
+
+#end-city{
+  height: 650px;
+  background-color: #D5DA94;
+  display: flex;
+  flex-direction:row;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#city-img{
+  width: 35%;
+  height: 100%;
+}
+#city-img img{
+  height: 50%;
+  width: 100%;
+}
+#city-texto{
+  width: 65%;
+}
+
+#itens-importantes{
+  width: 96%;
+  height: 650px;
+  justify-content: space-around;
+}
+
+#itens-end{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#itens-end img{
+  width: 100%;
+  height: 50%;
+}
+
+#next{
+  flex-direction: column;
+  align-items: center;
+}
+
+#zerei-e-agora{
+  width: 100%;
+}
+
+iframe{
+  width: 60%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*corpo-sobre*/
+
+#main-about section{
+  flex-direction: column;
+}
+
+#main-about article{
+  width: 100%;
+}
+#main-about article h1, dt{
+  font-size: 40px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+  #main-about p:not(.voltar), #main-about li {
+    color: black;
+  }
+
+  #main-about img{
+    display: block;
+    max-height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+/*rodapé*/
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #7e5d4a;
+  margin: 0px;
+}
+
+#logomarca{
+  display: flex;
+}
